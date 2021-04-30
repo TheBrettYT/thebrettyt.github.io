@@ -1,2 +1,2 @@
-# thebrettyt.github.io
-# thebrettyt.github.io/ugh/
+# https://thebrettyt.github.io
+# https://thebrettyt.github.io/ugh/
