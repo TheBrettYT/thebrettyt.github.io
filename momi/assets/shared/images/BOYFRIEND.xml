@@ -434,14 +434,14 @@
 	<SubTexture name="BF idle dance0003" x="208" y="1172" width="204" height="196" frameX="0" frameY="-19" frameWidth="205" frameHeight="206" />
 	<SubTexture name="BF idle dance0004" x="417" y="1172" width="202" height="199" frameX="-3" frameY="-14" frameWidth="205" frameHeight="206" />
 	<SubTexture name="BF idle dance0005" x="417" y="1172" width="202" height="199" frameX="-3" frameY="-14" frameWidth="205" frameHeight="206" />
-	<SubTexture name="BF idle dance0006" x="624" y="1172" width="205" height="205" frameX="-1" frameY="-1" frameWidth="205" frameHeight="206" />
-	<SubTexture name="BF idle dance0007" x="624" y="1172" width="205" height="205" frameX="-1" frameY="-1" frameWidth="205" frameHeight="206" />
-	<SubTexture name="BF idle dance0008" x="834" y="1172" width="204" height="206" frameX="-2" frameY="0" frameWidth="205" frameHeight="206" />
-	<SubTexture name="BF idle dance0009" x="834" y="1172" width="204" height="206" frameX="-2" frameY="0" frameWidth="205" frameHeight="206" />
-	<SubTexture name="BF idle dance0010" x="834" y="1172" width="204" height="206" frameX="-2" frameY="0" frameWidth="205" frameHeight="206" />
-	<SubTexture name="BF idle dance0011" x="834" y="1172" width="204" height="206" frameX="-2" frameY="0" frameWidth="205" frameHeight="206" />
-	<SubTexture name="BF idle dance0012" x="834" y="1172" width="204" height="206" frameX="-2" frameY="0" frameWidth="205" frameHeight="206" />
-	<SubTexture name="BF idle dance0013" x="834" y="1172" width="204" height="206" frameX="-2" frameY="0" frameWidth="205" frameHeight="206" />
+	<SubTexture name="BF idle dance0006" x="624" y="1172" width="205" height="203" frameX="-1" frameY="-1" frameWidth="205" frameHeight="206" />
+	<SubTexture name="BF idle dance0007" x="624" y="1172" width="205" height="203" frameX="-1" frameY="-1" frameWidth="205" frameHeight="206" />
+	<SubTexture name="BF idle dance0008" x="834" y="1172" width="204" height="205" frameX="-2" frameY="0" frameWidth="205" frameHeight="206" />
+	<SubTexture name="BF idle dance0009" x="834" y="1172" width="204" height="205" frameX="-2" frameY="0" frameWidth="205" frameHeight="206" />
+	<SubTexture name="BF idle dance0010" x="834" y="1172" width="204" height="205" frameX="-2" frameY="0" frameWidth="205" frameHeight="206" />
+	<SubTexture name="BF idle dance0011" x="834" y="1172" width="204" height="205" frameX="-2" frameY="0" frameWidth="205" frameHeight="206" />
+	<SubTexture name="BF idle dance0012" x="834" y="1172" width="204" height="205" frameX="-2" frameY="0" frameWidth="205" frameHeight="206" />
+	<SubTexture name="BF idle dance0013" x="834" y="1172" width="204" height="205" frameX="-2" frameY="0" frameWidth="205" frameHeight="206" />
 	<SubTexture name="BF idle shaking0000" x="1043" y="1172" width="204" height="206" frameX="-1" frameY="-1" frameWidth="205" frameHeight="206" />
 	<SubTexture name="BF idle shaking0001" x="1252" y="1172" width="204" height="206" frameX="-2" frameY="-1" frameWidth="205" frameHeight="206" />
 	<SubTexture name="BF idle shaking0002" x="1461" y="1172" width="204" height="206" frameX="-1" frameY="0" frameWidth="205" frameHeight="206" />
