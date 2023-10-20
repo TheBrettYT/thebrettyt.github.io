@@ -97,6 +97,15 @@
             }, 700);
         }, 3200);
     }, 2500);
+
+    function TravelToNextPage() {
+        document.body.style.opacity = 0
+
+        setTimeout(() => {
+            console.log('Set page to /Home')
+            window.location.href = "/Home"
+        }, 1200);
+    }
 </script>
 
 <body>
@@ -126,7 +135,7 @@
                 <div class="BoxPlaces">
                     <a class="location">Current Pages</a>
                     <div id="ButtonContainer" style="height: 35px" class="ButtonContainer">
-                        <a class="NavigatorText" href="/" id="Navi1">Home</a>
+                        <a class="NavigatorText" href="javascript:void(0);" onClick="TravelToNextPage()" id="Navi1">Home</a>
                         <a class="NavigatorText" id="Navi1">Socials</a>
                     </div>
                 </div>
@@ -136,6 +145,10 @@
 </body>
 
 <style>
+    body {
+        transition: opacity 1.4s cubic-bezier(.17,.67,.33,.92);
+    }
+
     .container-grid {
         display: grid;
         justify-items: center;
@@ -191,6 +204,7 @@
         gap: 3px;
         background: #151515;
         width: 12rem;
+        overflow: hidden;
         transition: 1.4s cubic-bezier(.17,.67,.33,.92)
     }
 
