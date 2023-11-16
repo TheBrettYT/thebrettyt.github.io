@@ -18,10 +18,10 @@
       property="og:description"
       content="Eaglercraft is real Minecraft 1.5.2 that you can play in any regular web browser. That includes school chromebooks, it works on all chromebooks. It supports both singleplayer and multiplayer with no extensions."
     />
-    <link rel="icon" href="Minecraft/favicon.ico" />
-    <link rel="shortcut icon" href="Minecraft/favicon.ico" />
-    <script type="text/javascript" src="Minecraft/classes.js"></script>
-    <script type="text/javascript" src="Minecraft/eagswebrtc.js"></script>
+    <link rel="icon" href="./Minecraft/favicon.ico" />
+    <link rel="shortcut icon" href="./Minecraft/favicon.ico" />
+    <script type="text/javascript" src="./Minecraft/classes.js"></script>
+    <script type="text/javascript" src="./Minecraft/eagswebrtc.js"></script>
     <script type="text/javascript">
       if (document.location.href.startsWith("file:")) {
         alert(
@@ -32,8 +32,8 @@
           const relayId = Math.floor(Math.random() * 3);
           window.eaglercraftOpts = {
             container: "game_frame",
-            assetsURI: "Minecraft/assets.epk",
-            serverWorkerURI: "Minecraft/worker_bootstrap.js",
+            assetsURI: "./Minecraft/assets.epk",
+            serverWorkerURI: "./Minecraft/worker_bootstrap.js",
             worldsFolder: "MAIN",
             servers: [
               {
