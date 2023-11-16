@@ -47,7 +47,7 @@
                     let SecondLine = document.createElement('div');
                     SecondLine.className = 'Title2'
                     SecondLine.id = 'page1stuff'
-                    SecondLine.textContent = 'Other Stuff\nLike FNF Games'
+                    SecondLine.textContent = 'Other Stuff'
                     document.getElementById('ButtonContainer').appendChild(SecondLine)
                     
                     // Call the height adjustment function initially
@@ -63,7 +63,8 @@
                         'cg5',
                         'kapi-v2',
                         'momi',
-                        'sky'
+                        'sky',
+                        'Minecraft (NEW!!)'
                     ]
                     for (let i = 0; i < PagesLOL2.length; i++) {
                         setTimeout(() => {
@@ -72,7 +73,14 @@
                             PageHa2.id = 'Page2ID' + i
                             PageHa2.href = '/' + PagesLOL2[i]
                             PageHa2.textContent = PagesLOL2[i]
+                            if(PagesLOL2[i] == 'Minecraft (NEW!!)') {
+                                PageHa2.href = '/Minecraft'
+                            } else {
+                                PageHa2.href = '/' + PagesLOL2[i]
+                            }
                             
+                            console.log(PagesLOL2[i])
+
                             document.getElementById('ButtonContainer').appendChild(PageHa2)
 
                             // Call the height adjustment function initially
