@@ -39,7 +39,7 @@
 
             setTimeout(() => {
                 document.getElementById('LoadingText').style = 'opacity:0;display:none'
-            }, 1100);
+            }, 1800);
             setTimeout(() => {
                 document.getElementById('Navi1').style = 'opacity:1'
 
@@ -76,7 +76,7 @@
                             if(PagesLOL2[i] == 'Minecraft (NEW!!)') {
                                 PageHa2.href = '/Minecraft/'
                             } else {
-                                PageHa2.href = '/' + PagesLOL2[i]
+                                PageHa2.href = '/' + PagesLOL2[i] + '/'
                             }
                             
                             console.log(PagesLOL2[i])
@@ -85,13 +85,13 @@
 
                             // Call the height adjustment function initially
                             adjustHeightToFit();
-                        }, 100 * i);
+                        }, 200 * i);
                         setTimeout(() => {
                             document.getElementById('Page2ID' + i).style.opacity = 1
                         }, 300 * i);
                     }
                 }, 1900);
-            }, 700);
+            }, 1900);
         }, 3200);
     }, 2500);
 
