@@ -1,3 +1,10 @@
 {
-    "liveServer.settings.port": 8080
+    "liveServer.settings.port": 8080,
+    "liveServer.settings.root": "/",
+    "liveServer.settings.https": {
+        "enable": true,
+        "cert": "O:\\RandomStuff\\ForMainsite\\TheBrettYT-WebSSL.crt",
+        "key": "O:\\RandomStuff\\ForMainsite\\TheBrettYT-WebSSL.key",
+        "passphrase": "12345"
+    }
 }
