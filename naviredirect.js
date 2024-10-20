@@ -15,5 +15,5 @@ function TravelToNextPage(i) {
 
     setTimeout(() => {
         window.location.href = `/${item}/`
-    }, 100);
+    }, 150);
 }
