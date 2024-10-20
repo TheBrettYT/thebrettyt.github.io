@@ -50,7 +50,7 @@ setTimeout(() => {
 
             setTimeout(() => {
                 let YouTubeChannels = [
-                    'FreeBSD',
+                    'FreeDNS',
                     'Github',
                     'Vercel'
                 ]
@@ -61,7 +61,7 @@ setTimeout(() => {
                         PageHa2.className = 'youtubelink'
                         PageHa2.id = 'Page2ID' + i
                         
-                        if(YouTubeChannels[i] == 'FreeBSD') {
+                        if(YouTubeChannels[i] == 'FreeDNS') {
                             PageHa2.href = 'https://thebrettyt.lain.ch/Platforms/'
                         } else if(YouTubeChannels[i] == 'Github') {
                             PageHa2.href = 'https://thebrettyt.github.io/Platforms/'
