@@ -55,7 +55,6 @@ setTimeout(() => {
                     'momi',
                     'sky',
                     'Minecraft',
-                    'Buckshot Ammo Counter',
                     'Proxy using Interstellar'
                 ]
                 for (let i = 0; i < PagesLOL2.length; i++) {
@@ -68,8 +67,6 @@ setTimeout(() => {
                         if(PagesLOL2[i] == 'Proxy using Interstellar') {
                             PageHa2.href = 'https://thebrettytprox.lain.ch/'
                             PageHa2.target = "_blank"
-                        } else if(PagesLOL2[i] == 'Buckshot Ammo Counter') {
-                            PageHa2.href = '/BuckshotRouletteHelper'
                         } else {
                             PageHa2.href = '/' + PagesLOL2[i] + '/'
                         }

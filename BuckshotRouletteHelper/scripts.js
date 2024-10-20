@@ -25,7 +25,7 @@ function showaction(type, group) {
     newLink.innerHTML = `${type}1`;
 
     // Apply initial styles for animation (starting position)
-    newLink.style.transform = "translateY(100px)";
+    newLink.style.transform = "translateY(-40px)";
     newLink.style.opacity = "1";
     newLink.style.position = "absolute"; // To make it appear and move independently
 
@@ -35,7 +35,7 @@ function showaction(type, group) {
     // Start the animation
     setTimeout(() => {
         newLink.style.transition = "transform 1s, opacity 1s"; // Transition for smooth animation
-        newLink.style.transform = "translateY(-20px)"; // Move up
+        newLink.style.transform = "translateY(0px)"; // Move up
         newLink.style.opacity = "0"; // Fade out
     }, 10);
 

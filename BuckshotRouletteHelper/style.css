@@ -116,8 +116,7 @@ a {
 .plus-group {
     position: relative; /* Needed for absolute positioning of 'a' elements inside */
     width: 100px; /* You can adjust the width */
-    height: 200px; /* Adjust the height */
-    overflow: hidden; /* To prevent animated elements from overflowing */
+    height: 50px; /* Adjust the height */
     display: flex;
     justify-content: center;
 }
