@@ -1,4 +1,9 @@
 body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+    overflow: hidden;
+    background: rgba(170,0,0,1);
     transition: opacity 0.3s cubic-bezier(.17,.67,.33,.92);
 }
 
@@ -31,23 +36,6 @@ body {
     transform: scale(0)rotate(0deg);
 }
 
-.LoadingText {
-    transition: 0.8s;
-}
-
-.page2stuff {
-    color: #fff;
-    opacity: 0;
-    transition: 0.8s;
-}
-
-.Title2 {
-    color: #fff;
-    font-size: 15px;
-    opacity: 0;
-    transition: 0.8s;
-}
-
 .ButtonContainer {
     display: grid;
     justify-items: center;
@@ -78,31 +66,58 @@ body {
     box-shadow: 0px 0px 11px 13px rgba(0,0,0,0.2);
 }
 
+a {
+    color: #fff;
+    font-weight: bold;
+    display: grid;
+    justify-content: center;
+}
+
+.LoadingText {
+    transition: 0.8s;
+}
+
 .Button {
-    background: var(--buttoncolor);
+    background: #1c1c1c;
     color: #fff;
     text-decoration: none;
     border: none;
-    font-size: 23px;
+    font-size: 17px;
     padding: 9px;
     transition: 0.9s;
     border-radius: 10px;
 }
 
 .Button:hover {
-    background: var(--buttoncolor);
-    font-size: 28px
+    background: #2c2c2c;
+    font-size: 19px
 }
 
-body {
-    font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
-    overflow: hidden;
-    background: rgba(170,0,0,1)
+.numberchange {
+    opacity: 0;
+    transition: 1.2s;
 }
 
-a {
-    color: #fff;
-    font-weight: bold;
+.AmmoAmmount {
     display: grid;
+    justify-items: center;
+    font-size: 80px;
+}
+
+/* Flex container to align the two groups side by side */
+.flex {
+    display: flex;
+    justify-content: space-around; /* Distribute space evenly */
+    align-items: flex-start; /* Aligns items at the top */
+    gap: 10px; /* Optional gap between groups */
+}
+
+/* Individual group styling */
+.plus-group {
+    position: relative; /* Needed for absolute positioning of 'a' elements inside */
+    width: 100px; /* You can adjust the width */
+    height: 200px; /* Adjust the height */
+    overflow: hidden; /* To prevent animated elements from overflowing */
+    display: flex;
     justify-content: center;
 }

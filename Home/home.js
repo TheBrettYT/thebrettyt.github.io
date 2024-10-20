@@ -55,6 +55,7 @@ setTimeout(() => {
                     'momi',
                     'sky',
                     'Minecraft',
+                    'Buckshot Ammo Counter',
                     'Proxy using Interstellar'
                 ]
                 for (let i = 0; i < PagesLOL2.length; i++) {
@@ -67,6 +68,8 @@ setTimeout(() => {
                         if(PagesLOL2[i] == 'Proxy using Interstellar') {
                             PageHa2.href = 'https://thebrettytprox.lain.ch/'
                             PageHa2.target = "_blank"
+                        } else if(PagesLOL2[i] == 'Buckshot Ammo Counter') {
+                            PageHa2.href = '/BuckshotRouletteHelper'
                         } else {
                             PageHa2.href = '/' + PagesLOL2[i] + '/'
                         }
@@ -86,21 +89,3 @@ setTimeout(() => {
         }, 700);
     }, 3100);
 }, 1700);
-
-function TravelToNextPage(i) {
-    document.body.style.opacity = 0
-
-    let item;
-
-    if(i == 1) {
-        item = 'Home'
-    } else if(i == 2) {
-        item = 'Socials'
-    } else if(i == 3) {
-        item = 'Platforms'
-    }
-
-    setTimeout(() => {
-        window.location.href = `/${item}/`
-    }, 100);
-}
