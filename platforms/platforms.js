@@ -23,14 +23,14 @@ setTimeout(() => {
             stuff = ''
         }
 
-        document.getElementById('LoadingText').textContent = `Loading${stuff} Socials`
+        document.getElementById('LoadingText').textContent = `Loading${stuff} Platforms`
     }, 130);
 
     document.getElementById('container-grid').style = 'opacity:1'
 
     setTimeout(() => {
         clearInterval(loading)
-        document.getElementById('LoadingText').textContent = `Loading Socials`
+        document.getElementById('LoadingText').textContent = `Loading Platforms`
 
         const container = document.getElementById('ButtonContainer')
 
@@ -49,25 +49,10 @@ setTimeout(() => {
             document.getElementById('LoadingText').remove()
 
             setTimeout(() => {
-                let SecondLine = document.createElement('div');
-                SecondLine.className = 'Title'
-                SecondLine.id = 'page1stuff'
-                SecondLine.textContent = 'YouTube Channels'
-                document.getElementById('ButtonContainer').appendChild(SecondLine)
-                
-                // Call the height adjustment function initially
-                adjustHeightToFit();
-
-                setTimeout(() => {
-                    document.getElementById('page1stuff').style.opacity = 1
-                }, 700);
-            }, 200);
-
-            setTimeout(() => {
                 let YouTubeChannels = [
-                    'TheBrettYT',
-                    'TheBrettYT2',
-                    'TheBrettFX'
+                    'FreeBSD',
+                    'Github',
+                    'Vercel'
                 ]
 
                 for (let i = 0; i < YouTubeChannels.length; i++) {
@@ -75,8 +60,15 @@ setTimeout(() => {
                         let PageHa2 = document.createElement('a');
                         PageHa2.className = 'youtubelink'
                         PageHa2.id = 'Page2ID' + i
-                        PageHa2.href = 'https://www.youtube.com/@' + YouTubeChannels[i]
-                        PageHa2.target = "_blank"
+                        
+                        if(YouTubeChannels[i] == 'FreeBSD') {
+                            PageHa2.href = 'https://thebrettyt.lain.ch/Platforms/'
+                        } else if(YouTubeChannels[i] == 'Github') {
+                            PageHa2.href = 'https://thebrettyt.github.io/Platforms/'
+                        } else if(YouTubeChannels[i] == 'Vercel') {
+                            PageHa2.href = 'https://thebrettyt.vercel.app/Platforms/'
+                        }
+
                         PageHa2.textContent = YouTubeChannels[i]
                         
                         document.getElementById('ButtonContainer').appendChild(PageHa2)
@@ -88,7 +80,7 @@ setTimeout(() => {
                         document.getElementById('Page2ID' + i).style.opacity = 1
                     }, 300 * i);
                 }
-            }, 1900);
+            }, 400);
         }, 700);
     }, 3100);
 }, 1700);
