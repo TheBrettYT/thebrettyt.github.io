@@ -107,6 +107,6 @@ function TravelToNextPage(i) {
     }
 
     setTimeout(() => {
-        window.location.href = `/${item}`
+        window.location.href = `/${item}/`
     }, 100);
 }
