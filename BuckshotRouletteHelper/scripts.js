@@ -78,7 +78,7 @@ function removeblank() {
     showaction("-", 2)
 }
 
-function reverser() {
+function inverter() {
     if(blankbulletcount == 0) {
         return console.log('Non Bullets')
     }
@@ -98,7 +98,7 @@ function resetcount() {
             livebulletcount--
             document.getElementById('live').textContent = livebulletcount
             showaction("-", 1)
-        }, i * 120);
+        }, i * 190);
     }
 
     for (let i = 0; i < blankbulletcount; i++) {
@@ -106,6 +106,6 @@ function resetcount() {
             blankbulletcount--
             document.getElementById('blank').textContent = blankbulletcount
             showaction("-", 2)
-        }, i * 120);
+        }, i * 190);
     }
 }
