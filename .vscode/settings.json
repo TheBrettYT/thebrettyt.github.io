@@ -1,6 +1,7 @@
 {
     "liveServer.settings.port": 3000,
     "liveServer.settings.root": "/",
+    "liveServer.settings.file": "./404.html"
     // "liveServer.settings.https": {
     //     "enable": true,
     //     "cert": "C:\\Certbot\\live\\thebrettyt.lain.ch\\cert.pem",

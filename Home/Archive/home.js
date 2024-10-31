@@ -5,12 +5,15 @@ setTimeout(() => {
 }, 700);
 
 setTimeout(() => {
-    document.getElementById('loadinggui').style.transform = "scale(0.4)rotate(-360deg)"
-    document.getElementById('loadinggui').style.opacity = 0
+    document.getElementById('loadinggui').style.transform = "scale(0.4)rotate(-360deg)translateY(-850px)"
+    // document.getElementById('loadinggui').style.opacity = 0
 
     setTimeout(() => {
-        document.getElementById('loadinggui').style.display = 'none'
-    }, 1700);
+        document.getElementById('loadinggui').style.transform = "scale(0.35)rotate(-360deg)translateY(-850px)"
+    }, 3000);
+    // setTimeout(() => {
+    //     document.getElementById('loadinggui').style.display = 'none'
+    // }, 3700);
 
     const loading = setInterval(() => {
         if(stuff == '') {
@@ -23,14 +26,14 @@ setTimeout(() => {
             stuff = ''
         }
 
-        document.getElementById('LoadingText').textContent = `Loading${stuff} Socials`
+        document.getElementById('LoadingText').textContent = `Loading${stuff} Sites`
     }, 130);
 
     document.getElementById('container-grid').style = 'opacity:1'
 
     setTimeout(() => {
         clearInterval(loading)
-        document.getElementById('LoadingText').textContent = `Loading Socials`
+        document.getElementById('LoadingText').textContent = `Loading Sites`
 
         const container = document.getElementById('ButtonContainer')
 
@@ -44,51 +47,49 @@ setTimeout(() => {
         setTimeout(() => {
             document.getElementById('LoadingText').style = 'opacity:0'
         }, 100);
-        
+
         setTimeout(() => {
             document.getElementById('LoadingText').remove()
 
             setTimeout(() => {
-                let SecondLine = document.createElement('div');
-                SecondLine.className = 'Title'
-                SecondLine.id = 'page1stuff'
-                SecondLine.textContent = 'YouTube Channels'
-                document.getElementById('ButtonContainer').appendChild(SecondLine)
-                
-                // Call the height adjustment function initially
-                adjustHeightToFit();
-
-                setTimeout(() => {
-                    document.getElementById('page1stuff').style.opacity = 1
-                }, 700);
-            }, 200);
-
-            setTimeout(() => {
-                let YouTubeChannels = [
-                    'TheBrettYT',
-                    'TheBrettYT2',
-                    'TheBrettFX'
+                let PagesLOL2 = [
+                    'cg5',
+                    'kapi-v2',
+                    'momi',
+                    'sky',
+                    'Minecraft',
+                    'Virtual Machine',
+                    'Proxy using Interstellar'
                 ]
-
-                for (let i = 0; i < YouTubeChannels.length; i++) {
+                for (let i = 0; i < PagesLOL2.length; i++) {
                     setTimeout(() => {
                         let PageHa2 = document.createElement('a');
-                        PageHa2.className = 'youtubelink'
+                        PageHa2.className = 'page2stuff'
                         PageHa2.id = 'Page2ID' + i
-                        PageHa2.href = 'https://www.youtube.com/@' + YouTubeChannels[i]
-                        PageHa2.target = "_blank"
-                        PageHa2.textContent = YouTubeChannels[i]
+                        PageHa2.href = '/' + PagesLOL2[i]
+                        PageHa2.textContent = PagesLOL2[i]
+                        if(PagesLOL2[i] == 'Proxy using Interstellar') {
+                            PageHa2.href = 'https://thebrettytprx.lain.ch/'
+                            PageHa2.target = "_blank"
+                        } else if(PagesLOL2[i] == 'Virtual Machine') {
+                            PageHa2.href = 'https://thebrettytvm.lain.ch/#/cast/free'
+                            PageHa2.target = "_blank"
+                        } else {
+                            PageHa2.href = '/' + PagesLOL2[i] + '/'
+                        }
                         
+                        // console.log(PagesLOL2[i])
+
                         document.getElementById('ButtonContainer').appendChild(PageHa2)
 
                         // Call the height adjustment function initially
                         adjustHeightToFit();
-                    }, 100 * i);
+                    }, 200 * i);
                     setTimeout(() => {
                         document.getElementById('Page2ID' + i).style.opacity = 1
                     }, 300 * i);
                 }
-            }, 1900);
+            }, 600);
         }, 700);
     }, 3100);
 }, 1700);

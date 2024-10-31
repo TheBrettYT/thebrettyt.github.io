@@ -1,13 +1,19 @@
 body {
+    display: grid;
+    font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /* overflow: hidden; */
+    background: rgba(170, 0, 0, 1);
     transition: opacity 0.3s cubic-bezier(.17,.67,.33,.92);
+    min-height: 98.6vh;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 .container-grid {
     display: grid;
     justify-items: center;
     align-items: center;
-    min-height: 100vh;
-    min-width: 100vw;
     transition: 1.4s cubic-bezier(.17,.67,.33,.92);
     opacity: 0;
 }
@@ -17,6 +23,20 @@ body {
     justify-items: center;
     align-items: center;
     gap: 30px
+}
+
+.header {
+    display: flex;
+    background: #1c1c1c;
+    margin-top: 10px;
+    border-radius: 23px;
+    justify-content: center;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .loadingholder {
@@ -92,12 +112,6 @@ body {
 .Button:hover {
     background: var(--buttoncolor);
     font-size: 28px
-}
-
-body {
-    font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
-    overflow: hidden;
-    background: rgba(170,0,0,1)
 }
 
 a {

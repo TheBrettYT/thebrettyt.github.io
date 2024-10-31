@@ -1,64 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Buckshot Roulette Ammo Counter</title>
-        <link rel="stylesheet" href="./style.css"/>
+        <link rel="icon" type="image/x-icon" href="./favicon.png">
+        <link rel="shortcut icon" type="image/png" href="./favicon.png">
+        <link rel="stylesheet" href="../global.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../global.js"></script>
+        <script type="module" src="../actions.js"></script>
         <script src="./scripts.js"></script>
-        <script src="../checksite.js"></script>
-        <script src="../naviredirect.js"></script>
     </head>
 
     <body>
-        <div id="loadinggui" class="loadingholder">
-            <img title="profile" src="/imgs/Profile512x512(favicon).png">
-        </div>
+        <header></header>
 
-        <div id="container-grid" class="container-grid">
-            <div class="container-grid2">
-                <div class="AmmoAmmount">
-                    <div class="flex">
-                        <div id="plus1group1" class="plus-group"></div>
-                        <div id="plus1group2" class="plus-group"></div>
-                    </div>
-                    <div class="flex">
-                        <a id="live">0</a><a>-</a><a id="blank">0</a> 
-                    </div>
+        <section class="content" id="content">
+            <div class="AmmoAmmount">
+                <div class="flex">
+                    <div id="plus1group1" class="plus-group"></div>
+                    <div id="plus1group2" class="plus-group"></div>
                 </div>
+                <div class="flex">
+                    <a id="live">0</a><a>-</a><a id="blank">0</a> 
+                </div>
+                <div class="flex ammo">
+                    <div id="ammoleft" class="ammoheight"></div>
+                    <a></a>
+                    <div id="ammoright" class="ammoheight"></div>
+                </div>
+            </div>
+            <div class="allbuttons">
                 <div class="Buttons">
                     <button class="Button" onclick="addlive()">Add Live</button>
+                    <button class="Button" onclick="addlive(2)">+2</button>
                     <button class="Button" onclick="addblank()">Add Blank</button>
-                    <button class="Button" onclick="inverter()">Used Inverter</button>
+                    <button class="Button" onclick="addblank(2)">+2</button>
+                </div>
+                <div class="Buttons">
+                    <button class="Button" onclick="inverterblank()">Use Inverter Blank</button>
+                    <button class="Button" onclick="inverterlive()">Use Inverter Live</button>
                 </div>
                 <div class="Buttons">
                     <button class="Button" onclick="removelive()">Remove Live</button>
                     <button class="Button" onclick="removeblank()">Remove Blank</button>
                     <button class="Button" onclick="resetcount()">Reset Count</button>
                 </div>
-
-                <div class="blurbg">
-                    <a>This site is hosted on 3 platforms</a>
-                    <a>Your current platform is:</a>
-                    <a id="github">Github</a>
-                    <a id="vercel">Vercel</a>
-                    <a id="freedns">FreeDNS</a>
-                    
-                    <a>Thanks to all of them.</a>
+                <div class="helper">
+                    <a onclick="copylink()">Add a friend/mod to control your count</a>
+                    <button class="Button" onclick="genlink()">Generate link</button>
                 </div>
-
-                <div class="blurbg">
-                    <a>Page Navigator</a>
-
-                    <div class="BoxPlaces">
-                        <a class="location">Current Pages</a>
-                        <div id="ButtonContainer" style="height: 115px" class="ButtonContainer">
-                            <a class="NavigatorText" href="javascript:void(0);" onClick="TravelToNextPage(1)" id="Navi1">Home</a>
-                            <a class="NavigatorText" href="javascript:void(0);" onClick="TravelToNextPage(2)" id="Navi2">Socials</a>
-                            <a class="NavigatorText" href="javascript:void(0);" onClick="TravelToNextPage(3)" id="Navi3">Platforms</a>
-                            <a class="NavigatorText" href="javascript:void(0);" onClick="TravelToNextPage(4)" id="Navi3">Buckshot Ammo Helper</a>
-                        </div>
-                    </div>
-                </div>
+                <a class="roomid" id="generated-link"></a>
+                <a class="copiedlink" id="copied-link"></a>
+                <button type="button" class="Button" onclick="closeroom()" id="delete-room">Delete Room</button>
             </div>
-        </div>
+        </section>
+                
+        <footer></footer>
     </body>
 </html>

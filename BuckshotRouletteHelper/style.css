@@ -104,6 +104,11 @@ a {
     font-size: 80px;
 }
 
+.ammo-animate {
+    transform: rotate(0deg);
+    transition: 0.8s;
+}
+
 /* Flex container to align the two groups side by side */
 .flex {
     display: flex;
