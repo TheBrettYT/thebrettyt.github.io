@@ -185,6 +185,7 @@ footer {
     transform: translateY(20px);
     gap: 10px;
     display: grid;
+    justify-items: center;
 }
 
 .numberchange {
