@@ -5,58 +5,52 @@
         <title>Home | Schoology</title>
         <link rel="icon" type="image/x-icon" href="../favicon.png">
         <link rel="shortcut icon" type="image/png" href="../favicon.png">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../global.css">
-        <script type="module" src="../actions.js"></script>
-        <script type="module" src="../global.js"></script>
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./socials.js"></script>
+        <script src="../checksite.js"></script>
+        <script src="../naviredirect.js"></script>
     </head>
 
     <body>
-        <header></header>
+        <div id="loadinggui" class="loadingholder">
+            <img title="profile" src="/imgs/Profile512x512(favicon).png">
+        </div>
 
-        <section class="content" id="content">
-            <h2>Socials</h2>
-            <div class="buttonrow">
-                <div class="Button">
-                    <div class="Social">
-                        <img width="32" height="32" alt="YTLogo" src="./YouTube.png">
-                        <a target="_blank" href="https://youtube.com/@TheBrettYT">TheBrettYT</a>
+        <div id="container-grid" class="container-grid">
+            <div class="container-grid2">
+                <div class="blurbg">
+                    <a>Welcome to TheBrettYT's Website</a>
+
+                    <div class="BoxPlaces">
+                        <a class="location">Current Socials</a>
+                        <div id="ButtonContainer" style="height: 15px" class="ButtonContainer">
+                            <a class="LoadingText" id="LoadingText">Loading Socials</a>
+                        </div>
                     </div>
+
+                    <a>This site is hosted on 3 platforms</a>
+                    <a>Your current platform is:</a>
+                    <a id="github">Github</a>
+                    <a id="vercel">Vercel</a>
+                    <a id="freedns">FreeDNS</a>
+                    
+                    <a>Thanks to all of them.</a>
                 </div>
-                <div class="Button">
-                    <div class="Social">
-                        <img width="32" height="32" alt="YTLogo" src="./Twitter-X.png">
-                        <a target="_blank" href="https://x.com/TheBrettYT">TheBrettYT</a>
-                    </div>
-                </div>
-                <div class="Button">
-                    <div class="Social">
-                        <img width="32" height="32" alt="YTLogo" src="./YouTube.png">
-                        <a target="_blank" href="https://youtube.com/@TheBrettYT2">TheBrettYT2</a>
-                    </div>
-                </div>
-                <div class="Button">
-                    <div class="Social">
-                        <img width="32" height="32" alt="YTLogo" src="./Instagram.png">
-                        <a target="_blank" href="https://instagram.com/TheBrettYT2/">TheBrettYT2</a>
-                    </div>
-                </div>
-                <div class="Button">
-                    <div class="Social">
-                        <img width="32" height="32" alt="YTLogo" src="./YouTube.png">
-                        <a target="_blank" href="https://youtube.com/@TheBrettFX">TheBrettFX</a>
-                    </div>
-                </div>
-                <div class="Button">
-                    <div class="Social">
-                        <img width="32" height="32" alt="YTLogo" src="./Twitter-X.png">
-                        <a target="_blank" href="https://x.com/TheBrettFX">TheBrettFX</a>
+
+                <div class="blurbg">
+                    <a>Page Navigator</a>
+
+                    <div class="BoxPlaces">
+                        <a class="location">Current Pages</a>
+                        <div id="ButtonContainer" style="height: 115px" class="ButtonContainer">
+                            <a class="NavigatorText" href="javascript:void(0);" onClick="TravelToNextPage(1)" id="Navi1">Home</a>
+                            <a class="NavigatorText" href="javascript:void(0);" onClick="TravelToNextPage(2)" id="Navi2">Socials</a>
+                            <a class="NavigatorText" href="javascript:void(0);" onClick="TravelToNextPage(3)" id="Navi3">Platforms</a>
+                            <a class="NavigatorText" href="javascript:void(0);" onClick="TravelToNextPage(4)" id="Navi3">Buckshot Ammo Helper</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <footer></footer>
+        </div>
     </body>
 </html>
