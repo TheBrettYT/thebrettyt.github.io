@@ -9,14 +9,13 @@
 body {
     font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
     background: rgba(170, 0, 0, 1);
-    color: #333;
 }
 
 /* Button styling */
 .buttonrow {
     display: flex;
     justify-content: center;
-    gap: 3px;
+    gap: 5px;
 }
 .Button {
     background: #1c1c1c31;

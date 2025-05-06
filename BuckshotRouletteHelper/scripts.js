@@ -297,6 +297,8 @@ function updateBulletCount(type, currentCount, targetCount, direction, elementId
     }
 }
 
+let hehefunny;
+
 setTimeout(() => {
     if(window.location.search) {
         const url = window.location.search;
@@ -307,13 +309,23 @@ setTimeout(() => {
         console.log(`Trying to join room ${roomId}`)
 
         document.getElementsByClassName('helper')[0].remove()
-        setInterval(() => {
+        hehefunny = setInterval(() => {
             fetch(`https://thebrettytdata.lain.ch/room/${roomId}/data`, {
                 method: 'GET'
             })
             .then(response => {
                 if(response.status == 404) {
-                    window.location = "/BuckshotRouletteHelper/"
+                    clearInterval(hehefunny)
+                    document.getElementById('alerts').style.opacity = 1
+                    document.getElementById('alerts').textContent = `${roomId} is not a valid room. | Redirecting back to single player.`
+                    setTimeout(() => {
+                        document.getElementById('alerts').style.opacity = 0
+                    }, 2450);
+
+                    setTimeout(() => {
+                        window.location = "/BuckshotRouletteHelper/"
+                    }, 3500);
+                    return
                 }
                 if (!response.ok) {
                     throw new Error('Network response was not ok ' + response.statusText);
@@ -346,15 +358,15 @@ setTimeout(() => {
     }
 
     const aelement = document.getElementById('generated-link')
-    console.log(aelement)
+
     aelement.addEventListener('click', function() {
         navigator.clipboard.writeText(aelement.textContent)
 
         // specify the action to take when the div is clicked
-        document.getElementById('copied-link').style.opacity = 1
-        document.getElementById('copied-link').textContent = 'Copied Link'
+        document.getElementById('alerts').style.opacity = 1
+        document.getElementById('alerts').textContent = 'Copied Link'
         setTimeout(() => {
-            document.getElementById('copied-link').style.opacity = 0
+            document.getElementById('alerts').style.opacity = 0
         }, 1450);
     });
 }, 200);
@@ -388,7 +400,12 @@ function genlink() {
 }
 function closeroom() {
     console.log('Closing Room')
-    
+
+    clearInterval(hehefunny)
+
+    document.getElementById('alerts').textContent = 'Closing Room. | Redirecting back to single player.';
+    document.getElementById('alerts').style.opacity = 1;
+
     setTimeout(() => {
         try {
             const url = window.location.search;
@@ -410,14 +427,19 @@ function closeroom() {
             console.log('Brett forgot to start up the data server')
         }
 
-        setTimeout(() => {
-            document.getElementsByClassName('helper')[0].remove()
-            const link = `${window.location.origin}/BuckshotRouletteHelper/?roomid=${currentRoomId}`;
+        // setTimeout(() => {
+        //     document.getElementsByClassName('helper')[0].remove()
+        //     const link = `${window.location.origin}/BuckshotRouletteHelper/?roomid=${currentRoomId}`;
 
-            document.getElementById('generated-link').textContent = link
-        }, 930);
-    }, 700);
+        //     document.getElementById('generated-link').textContent = link
+        // }, 930);
+    }, 1550);
+
     setTimeout(() => {
-        document.getElementById('generated-link').style.opacity = 1
-    }, 1900);
+        document.getElementById('alerts').style.opacity = 0
+    }, 3450);
+
+    setTimeout(() => {
+        window.location = "/BuckshotRouletteHelper/"
+    }, 4600);
 }

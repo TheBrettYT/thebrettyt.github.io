@@ -1,5 +1,5 @@
 {
-    "liveServer.settings.port": 3000,
+    "liveServer.settings.port": 3200,
     "liveServer.settings.root": "/",
     "liveServer.settings.file": "./404.html"
     // "liveServer.settings.https": {
